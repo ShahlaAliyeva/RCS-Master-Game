@@ -4,15 +4,21 @@ console.log(rulesImage);
 
 $(document).ready(function () {
     $('.rules button').on('click', function() {
-        $('.rules-image').css('display', 'block')
+        $(rulesImage).fadeIn('slow');
+        $(rulesImage).css('display', 'block')
+
 
         if($(rulesImage).css('display') == 'block') {
             $('.darker-background').css('display', 'block')
-        } else {
-            $('.darker-background').css('display', 'none')
-        }
+        } 
     })
 
-    
-    
+    $('.fa-xmark').on('click', function() {
+        $(rulesImage).fadeOut('slow');
+        $(rulesImage).css('display', 'none')
+
+        if($(rulesImage).css('display') == 'none') {
+            $('.darker-background').css('display', 'none')
+        } 
+    })
 });

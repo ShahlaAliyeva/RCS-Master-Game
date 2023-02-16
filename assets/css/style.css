@@ -60,6 +60,7 @@ body {
 
 .playground .bck-img {
     position: relative;
+    display: none;
 }
 
 .playground .choices img {
@@ -180,4 +181,78 @@ body {
     position: absolute;
     top: 0;
     display: none;
+}
+
+/* Duello section */
+.duello-section {
+    width: 55%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.duello-section .whose-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 99%;
+}
+
+.duello-section .span{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    font-style: o;
+    margin: 0 0 2rem 1.6rem;
+}
+
+.duello-section .selection-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 98%;
+}
+
+.duello-section .selection-side .your-choise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 9.5rem;
+    width: 9.5rem;
+    border-radius: 50%;
+    border: 15px solid transparent;
+    border-color: hsl(40, 84%, 53%);
+}
+
+.duello-section .selection-side .comp-choise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 9.5rem;
+    width: 9.5rem;
+    /* background-color: hsl(214, 47%, 23%); */
+    border-radius: 50%;
+    border: 15px solid transparent;
+    border-color: hsl(349, 70%, 56%);
+}
+
+/* Result side */
+
+.result-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-side span {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
 }
