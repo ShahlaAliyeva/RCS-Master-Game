@@ -213,7 +213,6 @@ body {
   font-weight: 600;
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
-  font-style: o;
   margin: 0 0 2rem 1.6rem;
 }
 
@@ -246,8 +245,6 @@ body {
   border-radius: 50%;
   background-color: hsl(214, 47%, 23%);
   transition: all ease-in 0.3s;
-  /* border: 15px solid transparent;
-    border-color: hsl(349, 70%, 56%); */
 }
 
 /* Result side */
@@ -345,6 +342,52 @@ body {
 
   .rules-image .pop-up-head i {
     font-size: 1.3rem;
+  }
+
+  .duello-section {
+    width: 85%;
+  }
+
+  .duello-section .span {
+    font-size: .9rem;
+  }
+
+  .duello-section .selection-side .your-choise {
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+  
+  .duello-section .selection-side .comp-choise {
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+
+  .result-side {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+  }
+  
+  .result-side span {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  
+  .result-side button {
+    width: 100%;
+    margin: 1rem;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    border: none;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Barlow Semi Condensed", sans-serif;
   }
   
 }

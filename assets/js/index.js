@@ -81,7 +81,13 @@ $(document).ready(function () {
         let score = parseInt($('.score-side .score').text())
         // console.log('score: ', score);
         function chooseWinner() {
-            $('.duello-section').css('width', '55%')
+            var width = $(window).width();
+            console.log('Width', Math.ceil($('.duello-section').width()) == Math.ceil(35 / 100 * width));
+            if(Math.ceil($('.duello-section').width()) == Math.ceil(35 / 100 * width)) {
+                $('.duello-section').css('width', '55%')
+            } else if (Math.ceil($('.duello-section').width()) == Math.ceil(85 / 100 * width)) {
+                $('.duello-section').css('width', '90%')
+            }
             $('.result-side').css('display', 'flex')
             $('.score-side .score').fadeIn()
             if(clickedBtn === compChoise) {
@@ -163,7 +169,11 @@ $(document).ready(function () {
             $('.result-side button').on('click', function() {
                 $('.bck-img').fadeIn();
                 $('.duello-section').fadeOut();
-                $('.duello-section').css('width', '30%')
+                if(Math.ceil($('.duello-section').width()) == Math.ceil(35 / 100 * width)) {
+                $('.duello-section').css('width', '55%')
+            } else if (Math.ceil($('.duello-section').width()) == Math.ceil(85 / 100 * width)) {
+                $('.duello-section').css('width', '90%')
+            }
                 $('.result-side').css('display', 'none')
                 $('.bck-img').css('display', 'flex')
                 $('.duello-section').css('display','none')
