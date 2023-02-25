@@ -161,6 +161,8 @@ $(document).ready(function () {
             $('.score-side .score').fadeIn()
             $('.score-side .score').text(`${score}`)
 
+            $('.duello-section .span').fadeOut(1000)
+
             // if($('.result-side span').text('You win')) {
             //     score += 1
             //     console.log('New score: ', score);
@@ -175,6 +177,7 @@ $(document).ready(function () {
                 $('.duello-section').css('width', '90%')
             }
                 $('.result-side').css('display', 'none')
+                $('.duello-section .span').css('display', 'inline-block')
                 $('.bck-img').css('display', 'flex')
                 $('.duello-section').css('display','none')
                 //remove everything in last game
