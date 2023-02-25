@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -45,23 +45,23 @@
   <div class="bck-img">
     <img src="./assets/images/bg-pentagon.svg" alt="playground-bck">
 
-    <div class="choices scissors">
+    <div id="scissors" class="choices">
       <img src="./assets/images/icon-scissors.svg" alt="scissors">
     </div>
 
-    <div class="choices papper">
+    <div id="paper" class="choices">
       <img src="./assets/images/icon-paper.svg" alt="papper">
     </div>
 
-    <div class="choices rock">
+    <div id="rock" class="choices">
       <img src="./assets/images/icon-rock.svg" alt="rock">
     </div>
 
-    <div class="choices lizard">
+    <div id="lizard" class="choices">
       <img src="./assets/images/icon-lizard.svg" alt="lizard">
     </div>
 
-    <div class="choices spock">
+    <div id="spock" class="choices">
       <img src="./assets/images/icon-spock.svg" alt="spock">
     </div>
   </div>
@@ -74,16 +74,15 @@
 
     <div class="selection-side">
       <div class="your-choise">
-        <img class="your-choise-scissors" src="./assets/images/icon-scissors.svg" alt="your-choose">
+        <!-- <img src="./assets/images/icon-scissors.svg" alt="your-choose"> -->
       </div>
 
       <div class="result-side">
-        <span>you lose</span>
-        <button>play again</button>
+        <span> </span>
       </div>
 
       <div class="comp-choise">
-        <img src="./assets/images/icon-spock.svg" alt="comp-choise">
+        <!-- <img src="./assets/images/icon-spock.svg" alt="comp-choise"> -->
       </div>
     </div>
   </div>
